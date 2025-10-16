@@ -1,0 +1,127 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.sensor-card {
+    border-left: 4px solid;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    height: 100%;
+}
+
+.sensor-card .card-body {
+    padding: 1rem;
+}
+
+.sensor-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.sensor-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.sensor-label {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.sensor-unit {
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+.progress-custom {
+    height: 8px;
+    margin-top: 0.5rem;
+}
+
+.humidity {
+    border-left-color: #0dcaf0;
+}
+
+.dissolved {
+    border-left-color: #20c997;
+}
+
+.turbidity {
+    border-left-color: #0dcaf0;
+}
+
+.temperature {
+    border-left-color: #ffc107;
+}
+
+.flow {
+    border-left-color: #dc3545;
+}
+
+.light {
+    border-left-color: #20c997;
+}
+
+.air-temp {
+    border-left-color: #0dcaf0;
+}
+
+.ec {
+    border-left-color: #ffc107;
+}
+
+.ph {
+    border-left-color: #dc3545;
+}
+
+@media (min-width: 992px) {
+    .col-lg {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (max-width: 991px) {
+    .sensor-value {
+        font-size: 1.5rem;
+    }
+    .sensor-unit {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .sensor-value {
+        font-size: 1.3rem;
+    }
+    .sensor-label {
+        font-size: 0.75rem;
+        min-height: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+    .sensor-card {
+        margin-bottom: 0.5rem;
+    }
+}
